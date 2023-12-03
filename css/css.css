@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header, section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #5e3929;
+}
+h1 {
+    background: #f18181;
+    position: relative;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+#banner {
+    margin-bottom: 20px; /* Agrega espacio entre el banner y la sección de productos */
+}
+
+#banner img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+#categories {
+    margin-bottom: 20px;
+}
+
+#categories h2 {
+    color: #5e3929;
+}
+
+#categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#categories li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#categories img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-out;
+}
+
+#categories img:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón sobre la imagen */
+}
+
+#categories p {
+    margin-top: 28px;
+    color: #5e3929;
+}
+#categoria-nombre {
+        width: 70%;
+        font-size: 260%;
+    }
+#descripcion {
+        font-family: cursive;
+    }

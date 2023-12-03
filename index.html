@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chocolatería App</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+    <body>
+
+        <div id="app">
+            <header>
+                <h1>{{ chocolateria.nombre }}</h1>
+                <p id="descripcion">{{ chocolateria.descripcion }}</p>
+            </header>
+            <div id="banner">
+                <img src="/img/banner.avif" alt="Banner de la chocolatería">
+            </div>        
+
+            <div id="categories">
+                <h2>Categorías</h2>
+                <ul>
+                    <li v-for="categoria in categorias" :key="categoria.id">
+                        <img
+                            :src="categoria.imagen"
+                            :alt="`Imagen de ${categoria.nombre}`"
+                            @mouseover="cambiarImagenCategoria(categoria.id)"
+                            @mouseout="restaurarImagenCategoria(categoria.id)"
+                        />
+                        <p id="categoria-nombre">{{ categoria.nombre }}</p>
+                    </li>
+                </ul>
+            </div>
+
+            <section>
+                <h2>Productos</h2>
+                <ul>
+                    <li v-for="producto in productos" :key="producto.id">
+                        <img :src="producto.imagen" alt="Imagen del producto">
+                <div>
+                    <strong>{{ producto.nombre }}</strong>
+                    <p>Precio: {{ producto.precio.toFixed(2) }} €</p>
+                </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <script type="text/javascript" src="js/myapp.js"></script>
+    </body>
+</html>

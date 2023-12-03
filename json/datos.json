@@ -1,0 +1,16 @@
+{
+    "chocolateria": {
+        "nombre": "Chococioso",
+        "descripcion": "Descubre el placer del chocolate en cada bocado"
+    },
+    "categorias": [
+        { "id": 1, "nombre": "Chocotejas", "imagen": "../img/chocotejas.jpg" },
+        { "id": 2, "nombre": "Barras de chocolate", "imagen": "/img/barras.jpg" },
+        { "id": 3, "nombre": "Bombones y Truffas", "imagen": "../img/bombones-cate.jpg" }
+    ],
+    "productos": [
+        { "id": 1, "nombre": "Tableta de chocolate negro", "precio": 5.99, "imagen": "../img/tableta.jpg" },
+        { "id": 2, "nombre": "Bombones surtidos", "precio": 12.99, "imagen": "../img/bombones.jpg" },
+        { "id": 3, "nombre": "Chocolate caliente", "precio": 3.49, "imagen": "../img/chocoCaliente.jpg" }
+    ]
+}
